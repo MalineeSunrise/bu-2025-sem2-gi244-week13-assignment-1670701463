@@ -20,7 +20,9 @@ public class SpawnManager : MonoBehaviour
             return;
         }
 
-        GameObject obstacle = ObstacleObjectPool.staticObstacle.Acquire(-1);
+        int randomType = Random.Range(0, 3);
+
+        GameObject obstacle = ObstacleObjectPool.staticObstacle.Acquire(randomType);
         obstacle.transform.position = spawnPoint.position;
     }
 }

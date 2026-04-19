@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObjectPool
   obstacleBarrelPrefab: {fileID: 151586, guid: 95927758d3a4cef4ba6c4318f06876fd, type: 3}
-  obstacleBarrierPrefab: {fileID: 181666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
+  obstacleBarrierPrefab: {fileID: 145980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
   obstacleStoneWallPrefab: {fileID: 1574251093279545299, guid: aa7a79e53bee7d64e9b1fb9894a773a5, type: 3}
   poolSize: 10
 --- !u!4 &255484002

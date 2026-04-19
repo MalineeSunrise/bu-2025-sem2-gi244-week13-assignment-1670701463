@@ -30,7 +30,7 @@ public class ObstacleObjectPool : MonoBehaviour
         {
             int randomType = Random.Range(0, 3);
             CreateObstacle(randomType);
-            if (i % 20 == 0)
+            if (i % 10 == 0)
             {
                 yield return null;
             }
@@ -60,11 +60,6 @@ public class ObstacleObjectPool : MonoBehaviour
 
     public GameObject Acquire(int obstacleType)
     {
-        if (obstacleType < 0 || obstacleType > 2)
-        {
-            obstacleType = Random.Range(0, 3);
-        }
-
         List<GameObject> pool = null;
         if (obstacleType == 0) pool = obstacleBarrelPool;
         else if (obstacleType == 1) pool = obstacleBarrierPool;
@@ -75,7 +70,7 @@ public class ObstacleObjectPool : MonoBehaviour
             CreateObstacle(obstacleType);
         }
 
-        GameObject go = pool[0];
+        var go = pool[0];
         pool.RemoveAt(0);
         go.SetActive(true);
         return go;
