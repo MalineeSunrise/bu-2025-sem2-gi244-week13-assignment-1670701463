@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6890131137021484502}
   - component: {fileID: 8761171679406905876}
-  - component: {fileID: -6315419354103500401}
   - component: {fileID: 3324288457532990135}
   m_Layer: 0
   m_Name: Prop_StoneWall_01
@@ -48,18 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveLeft
   speed: 10
---- !u!114 &-6315419354103500401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574251093279545299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d55764ec8c1b94a9425c0cc182cea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  obstacleType: 2
 --- !u!54 &3324288457532990135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85,7 +73,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &8098036581254772636
 GameObject:
