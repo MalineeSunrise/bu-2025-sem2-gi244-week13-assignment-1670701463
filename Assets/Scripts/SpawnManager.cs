@@ -1,9 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
     public Transform spawnPoint;
-    public GameObject obstaclePrefab;
 
     void Start()
     {
@@ -20,10 +20,7 @@ public class SpawnManager : MonoBehaviour
             return;
         }
 
-        Instantiate(
-            obstaclePrefab,
-            spawnPoint.position,
-            obstaclePrefab.transform.rotation
-        );
+        GameObject obstacle = ObstacleObjectPool.staticObstacle.Acquire(-1);
+        obstacle.transform.position = spawnPoint.position;
     }
 }
